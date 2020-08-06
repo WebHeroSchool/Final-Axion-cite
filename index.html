@@ -4,66 +4,82 @@
 		<meta charset="UTF-8">
 		<title class='head__title'>AXION</title>
 		<link rel='stylesheet' href='css/fonts.css'>
+		<link rel='stylesheet' href='css/style.css'>
+		<meta name="viewport" content="initial-scale=1.0, width=device-width">
 	</head>
 	<body class='body'>
 		<header class='header'>
-			<img src='images/Axion-logo-1.png' class='header__logo' alt='AXION logo'>
-			<nav class='menu'>
-				<a href='#' class='menu__item'>SHOP</a>
-				<a href='#' class='menu__item'>NEWS</a>
-				<a href='#' class='menu__item'>TEAMS</a>
-				<a href='#' class='menu__item'>LEGACY</a>
-				<a href='#' class='menu__item'>HELP</a>
-			</nav>
-			<form class='menu__item menu__form'>
-				<input class='menu__input' type='search'>
-				<button class='menu__button' type='sibmit'><img src="images/Vector.png" alt="search"></button>
-			</form>
-			<nav>
-				<a href='#' class='menu__item'>SIGN UP</a>
-				<a href='#' class='menu__item'>CART<span class='menu__item_cart'>1</span></a>
-			</nav>
-			<img src='images/united-states.png' class='menu__USA'>
+			<section class='header__menu'>
+				<img src='images/Axion-logo-1.png' class='header__logo' alt='AXION logo'>
+				<img src="images/Axion-logo.png" alt="AXION" class='header__logo_mobile'>
+				<nav class='menu'>
+					<a href='#' class='menu__item'>SHOP</a>
+					<a href='#' class='menu__item'>NEWS</a>
+					<a href='#' class='menu__item'>TEAM</a>
+					<a href='#' class='menu__item'>LEGACY</a>
+					<a href='#' class='menu__item'>HELP</a>
+				</nav>
+				<form class='menu__form'>
+					<input class='menu__input' type='search'>
+					<button class='menu__button button' type='sibmit'><img src="images/Vector.png" alt="search"></button>
+				</form>
+				<nav class='menu__profile'>
+					<a href='#' class='menu__item profile__item'>SIGN IN</a>
+					<a href='#' class='menu__item profile__item'>CART<span class='menu__item_cart'>1</span></a>
+				</nav>
+				<img src='images/united-states.png' class='menu__USA'>
+				<img src='images/Group 18.png' class='menu__burger'>
+			</section>
 			<section class='header__container'>
 				<h1 class='container__title'>Legendary<br>footwear<br>reborn.</h1>
-				<a href="#" class='container__button button'>Shop now</a>
-				<img src='images/Arrow.png' alt='Arrow' class='container__button_arrow'>
+				<div class='container__point'>
+					<a href="#" class='container__button button'>Shop now</a>
+					<img src='images/Arrow.png' alt='Arrow' class='container__button_arrow'>
+				</div>
 			</section>
 		</header>
 		<main>
 		<article class='products'>
 			<h2 class='products__title title'>Featured product</h2>
 			<section class='products__items'>
-				<section class='sneakers'>
-					<img class='sneakers__image' src="images/83d143ed9791a3b813121de5958d3571 (3).png" alt="black sneakers">
+				<section class='sneakers sneakers_mobile'>
+					<img class='sneakers__image' src="images/83d143ed9791a3b813121de5958d3571(3).png" alt="black sneakers">
 					<p class='sneakers__name'>Atlas Black/Rasta Axion</p>
 					<section class='sneakers__description'>
 						<p class='sneakers__description_price'>$89.00</p>
 						<div class='sneakers__description_colors'>
 							<img class='color' src="images/Ellipse.png" alt="gray">
+							<img class='color_mobile' src="images/color_mobile1.png" alt="red">
 							<img class='color' src="images/Ellipse (1).png" alt="black">
+							<img class='color_mobile' src="images/color_mobile2.png" alt="black">
 							<img class='color' src='images/Ellipse (2).png' alt='red'>
+							<img class='color_mobile' src='images/color_mobile3.png' alt='gray'>
 							<img class='color' src='images/Ellipse (3).png' alt='yellow'>	
+							<img class='color_mobile' src='images/color_mobile4.png' alt='yellow'>
 						</div>
 					</section>
 				</section>
 				<img class='products__items_border' src="images/Vector (1).png" alt='border'>
-				<section class='sneakers'>
-					<img class='sneakers__image' src="images/83d143ed9791a3b813121de5958d3571 (1).png" alt="orange sneakers">
+				<section class='sneakers sneakers_tablet'>
+					<img class='sneakers__image' src="images/83d143ed9791a3b813121de5958d3571(1).png" alt="orange sneakers">
 					<p class='sneakers__name'>Camel/Chili Pepper Axion</p>
 					<section class='sneakers__description'>
 						<p class='sneakers__description_price'>$74.00</p>
 						<div class='sneakers__description_colors'>
 							<img class='color' src="images/Ellipse.png" alt="gray">
+							<img class='color_mobile' src='images/color_mobile3.png' alt='gray'>
 							<img class='color' src="images/Ellipse (4).png" alt="orange">
+							<img class='color_mobile' src='images/color_mobile5.png' alt='orange'>
 							<img class='color' src='images/Ellipse (2).png' alt='red'>
-							<img class='color' src='images/Ellipse (3).png' alt='yellow'>	
+							<img class='color_mobile' src="images/color_mobile1.png" alt="red">
+							<img class='color_mobile' src='images/color_mobile4.png' alt='yellow'>
+							<img class='color' src='images/Ellipse (3).png' alt='yellow'>
 						</div>
 					</section>
 				</section>
 				<img class='products__items_border' src="images/Vector (1).png" alt='border'>
-				<section class='sneakers'>
-					<img class='sneakers__image' src="images/83d143ed9791a3b813121de5958d3571.png" alt="red sneakers">
+				<section class='sneakers sneakers_dekstop'>
+					<img class='sneakers__image' src="images/83d143ed9791a3b813121de5958d3571 (1).png" alt="red sneakers">
 					<p class='sneakers__name'>Mandel Smoke/Rust Axion</p>
 					<section class='sneakers__description'>
 						<p class='sneakers__description_price'>$69.00</p>
@@ -76,8 +92,8 @@
 					</section>
 				</section>
 				<img class='products__items_border' src="images/Vector (1).png" alt='border'>
-				<section class='sneakers'>
-					<img class='sneakers__image' src="images/83d143ed9791a3b813121de5958d3571 (2).png" alt="azure sneakers">
+				<section class='sneakers sneakers_dekstop'>
+					<img class='sneakers__image' src="images/83d143ed9791a3b813121de5958d3571(2).png" alt="azure sneakers">
 					<p class='sneakers__name'>Cloud/Electric Blue Axion</p>
 					<section class='sneakers__description'>
 						<p class='sneakers__description_price'>$69.00</p>
@@ -98,7 +114,7 @@
 				<img src="images/Rectangle 5.png" alt="play" class='history__video_play'>
 			</section>
 			<section class="history__text">
-				<h2 class='history__title title'>Legendary<br>footwear reborn</h2>
+				<h2 class='history__title title'>Legendary footwear reborn</h2>
 				<p class='history__text_main'>We are a brand with a history and are relaunching for 2019. We’ve been a part of the skater’s family ever since it’s early teenage years. And now we presentate a new footwear collection.</p>
 				<a href="#" class='history__button button'>Learn more</a>
 				<img src='images/Arrow.png' alt='Arrow' class='history__button_arrow' >

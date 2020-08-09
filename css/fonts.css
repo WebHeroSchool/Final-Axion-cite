@@ -5,4 +5,10 @@
 	font-weight: normal;
 	font-style: normal;
 }
-
+@font-face {
+	font-family: 'GothamPro';
+	src: url('fonts/GothaProBla.eot');
+	src: local('☺'), url('fonts/GothaProBla.woff') format('woff'), url('fonts/GothaProBla.ttf') format('truetype'), url('fonts/GothaProBla.svg') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}

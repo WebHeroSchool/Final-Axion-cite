@@ -1,5 +1,5 @@
 body {
-  font-family: 'GothamPro',  sans-serif;
+  font-family: 'GothamPro', sans-serif;
   max-width: 1030px;
   margin: 0 auto;
 }
@@ -48,9 +48,11 @@ body {
   display: flex;
   justify-content: flex-end;
 }
+
 .header__logo_mobile {
   display: none;
 }
+
 .menu__burger {
   display: none;
 }
@@ -125,9 +127,11 @@ body {
 .button:hover {
   text-decoration: underline;
 }
+
 .container__button {
   color: #fff;
 }
+
 .products {
   padding-bottom: 45px;
 }
@@ -186,6 +190,7 @@ body {
   justify-content: space-between;
   flex: 1;
 }
+
 .color_mobile {
   display: none;
 }
@@ -210,7 +215,7 @@ body {
   justify-content: center;
   align-items: center;
   padding-left: 32px;
-  padding-right: 45px; 
+  padding-right: 45px;
 }
 
 .history__video_main {
@@ -218,12 +223,15 @@ body {
   width: 644px;
   height: 358px;
 }
+
 .history__video_background {
   position: absolute;
 }
+
 .history__video_play {
   position: absolute;
 }
+
 .history__text {
   width: 266px;
 }
@@ -234,9 +242,11 @@ body {
   justify-content: center;
   margin: 0;
 }
+
 .history__text_main {
   font-size: 14px;
 }
+
 .history__button {
   color: #fff;
 }
@@ -246,9 +256,11 @@ body {
 	  max-width: 930px;
 	  margin: 0 auto;
   }
+
   .header__menu {
     height: 130px;
   }
+
   .header__container {
     height: 253px;
   }
@@ -257,12 +269,15 @@ body {
     font-size: 13px;
     font-weight: normal;
   }
+
   .products__title {
-    padding: 50px 0px 0px 0px;
+    padding: 50px 0 0 0;
   }
+
   .products {
     padding-bottom: 60px;
   }
+
   .history {
     height: 442px;
   }
@@ -271,6 +286,7 @@ body {
     width: 575px;
     height: 325px;
   }
+
   .history__text {
     width: 248px;
   }
@@ -281,9 +297,11 @@ body {
     max-width: 1023px;
     margin: 0 auto;
   }
+
   .header__menu {
     justify-content: space-between;
   }
+
   .header__logo {
     display: none;
   }
@@ -292,15 +310,19 @@ body {
     display: flex;
     margin-left: 43px;
   }
+
   .menu {
     display: none;
   }
+
   .menu__form {
     display: none;
   }
+	
   .menu__profile {
     display: none;
   }
+	
   .menu__USA {
     display: none;
   }
@@ -315,18 +337,23 @@ body {
     background-position-x: 20%;
     height: 415px;
   }
+
   .container__title {
     font-size: 50px;
   }
+
   .container__button {
     font-size: 20px;
   }
+
   .title {
     font-size: 30px;
   }
+
   .sneakers_dekstop {
     display: none;
   }
+
   .products__items_border {
     display: none;
   }
@@ -336,6 +363,7 @@ body {
     height: 233px;
     padding-bottom: 30px;
   }
+
   .sneakers__name {
     font-size: 20px;
   }
@@ -346,13 +374,16 @@ body {
     align-items: center;
     flex: 1;
   }
+ 
   .sneakers__description_price {
     font-size: 25px;
     flex: 4;
   }
+
   .sneakers__description_colors {
     flex: 2;
   }
+
   .color {
     display: none;
   }
@@ -367,6 +398,7 @@ body {
     flex-direction: column;
     height: 590px;
   }
+
   .history__video {
     order: 1;
   }
@@ -381,9 +413,11 @@ body {
     font-weight: normal;
     padding-bottom: 30px;
   }
+
   .history__button {
     display: none;
   }
+
   .history__button_arrow {
     display: none;
   }
@@ -417,21 +451,27 @@ body {
     width: 41px;
     height: 15px;
   }
+
   .header__menu {
     height: 72px;
   }
+
   .container__title {
     font-size: 20px;
   }
+
   .container__button {
     font-size: 12px;
   }
+
   .title {
     font-size: 20px;
   }
+
   .products__title {
-    padding: 15px 0px 0px 0px;
+    padding: 15px 0 0 0;
   }
+
   .sneakers_tablet {
     display: none;
   }
@@ -442,18 +482,23 @@ body {
     align-self: center;
     padding-bottom: 0;
   }
+
   .sneakers__name {
     font-size: 15px;
   }
+
   .sneakers__description {
-    padding-bottom: 50px; 
+    padding-bottom: 50px;
   }
+
   .sneakers__description_price {
     font-size: 20px;
   }
+
   .sneakers {
     margin-left: 20px;
   }
+
   .sneakers__description_colors {
     flex: 1.5
   }
@@ -462,6 +507,7 @@ body {
     width: 15px;
     height: 15px;
   }
+
   .history {
     height: 380px;
   }
@@ -471,9 +517,11 @@ body {
     margin: 0;
     padding: 0;
   }
+
   .history__text {
     width: 281px;
   }
+
   .history__text_main {
     font-size: 14px;
   }
@@ -494,13 +542,16 @@ body {
     padding-left: 15px;
     background-position-x: 30%;
   }
+
   .header__logo_mobile {
     margin-left: 25px;
   }
+
   .menu__burger {
     margin-right: 20px;
   }
-  .history__video{
+  
+  .history__video {
   	padding: 0;
   }
 }

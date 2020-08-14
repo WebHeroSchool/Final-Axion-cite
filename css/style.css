@@ -16,7 +16,7 @@ main {
 .gallery {
   max-width: 1030px;
   margin: 0 auto;
-  height: 258px;
+  height: 255px;
 }
 
 .header__menu {
@@ -315,7 +315,7 @@ main {
 }
 
 .story__button_WhiteArrow {
- display: none;
+  display: none;
 }
 
 .story__button_text:hover {
@@ -509,10 +509,6 @@ a.navigation__item:hover {
 
   .stories {
     height: 491px;
-  }
-
-  .gallery {
-    height: 255px;
   }
 
   .gallery__photo {

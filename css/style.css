@@ -355,20 +355,28 @@ main {
 
 .footer {
   background: #000;
-  height: 297px;
   color: #fff;
+  padding: 56px 0 41px 0;
 }
 
 .footer__navigation {
   display: flex;
   justify-content: space-around;
-  padding: 0 147px 35px 156px;
+  margin: 0 70px 53px 70px;
+}
+
+.navigation__column:first-child {
+  margin: 0 36px 0 85px;
+}
+
+.navigation__column:last-child {
+  margin: 0 81px 0 0;
 }
 
 .navigation__title {
   font-size: 12px;
   line-height: 11px;
-  margin: 66px 0 11px 0;
+  margin-bottom: 11px;
   font-weight: 700;
 }
 
@@ -385,15 +393,21 @@ main {
   margin-bottom: 8px;
 }
 
+.navigation__item:last-child {
+  margin-bottom: 0;
+}
+
 a.navigation__item:hover {
   text-decoration: underline;
 }
 
 .signUp__text {
-  margin-bottom: 11px;
+  margin: 0 0 11px 0;
 }
 
 .signUp__button {
+  display: block;
+  width: 42px;
   font-size: 10px;
   line-height: 10px;
   color: #fff;
@@ -401,6 +415,7 @@ a.navigation__item:hover {
   text-decoration: none;
   border: 1px solid #fff;
   padding: 8px 45px 8px 45px;
+  margin-bottom: 34px;
 }
 
 .signUp__button:hover {
@@ -408,14 +423,9 @@ a.navigation__item:hover {
 }
 
 .navigation__networks {
-  margin-top: 44px;
   display: flex;
   justify-content: space-between;
   width: 134px;
-}
-
-.navigation__column_second {
-  margin-left: 26px;
 }
 
 .footer__rights {
@@ -516,23 +526,35 @@ a.navigation__item:hover {
     height: 132.86px;
   }
 
+  .footer {
+    padding: 70px 0 46px 0;
+  }
+
   .footer__navigation {
-    padding: 0 74px 35px 84px;
+    margin: 0 47px 53px 47px;
+  }
+
+  .navigation__column:first-child {
+    margin: 0 31px 0 38px;
+  }
+
+  .navigation__column:last-child {
+    margin: 0 30px 0 0;
   }
 
   .navigation__title {
-    margin: 71px 0 11px 0;
+    margin: 0 0 11px 0;
   }
 
   .signUp__text {
-    margin: -6px 0 16px 0;
+    margin-bottom: 9px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  body {
-    max-width: 1023px;
-    margin: 0 auto;
+  main {
+    max-width: 100%;
+    margin: 0 0 0 0;
   }
 
   .header__menu {
@@ -798,45 +820,52 @@ a.navigation__item:hover {
     height: 170px;
   }
 
+  .footer {
+    padding: 59px 0 23px 0;
+  }
+
   .footer__navigation {
-    padding: 5px 8px 58px 19px;
+    margin: 0 0 70 0;
+  }
+
+  .navigation__column:first-child {
+    margin: 0 0 0 18px;
+  }
+
+  .navigation__column:last-child {
+    margin: 0 9px 0 0;
   }
 
   .navigation__title {
-    margin: 53px 0 7px 0;
+    margin: 0 0 7px 0;
   }
 
   .navigation__item {
     margin-bottom: 7px;
   }
 
-  .navigation__column_second {
-    margin-left: -6px;
-  }
-
   .signUp__text {
     width: 156px;
-    margin: -3px 0 16px 0;
+    margin: 0 0 10px 0;
   }
 
   .signUp__button {
     padding: 7px 50px 7px 50px;
+    margin-bottom: 28px;
   }
 
   .navigation__networks {
-    margin-top: 35px;
     width: 117px;
   }
 }
 
 @media screen and (max-width: 767px) {
   body {
-    max-width: 375px;
-    margin: 0 auto;
+    width: 100%;
   }
 
   .header__container {
-    background-size: 706px 191px;
+    background-size: cover;
     height: 191px;
     padding-left: 50px;
   }
@@ -1042,20 +1071,20 @@ a.navigation__item:hover {
   }
 
   .footer {
-    height: 898px;
+    padding: 40px 0 23px 0;
   }
 
   .footer__navigation {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 5px 8px 11px 19px;
+    margin: 0 0 25px 0;
   }
 
   .navigation__title {
     font-size: 15px;
     line-height: 14px;
-    margin: 35px 0 5px 0;
+    margin: 0 0 5px 0;
   }
 
   .navigation__item {
@@ -1067,6 +1096,10 @@ a.navigation__item:hover {
 
   .navigation__item_small {
     margin-bottom: 8px;
+  }
+
+  .navigation__column {
+    margin-bottom: 41px;
   }
 
   .navigation__column_first {
@@ -1085,27 +1118,35 @@ a.navigation__item:hover {
     order: 3;
   }
 
-  .navigation__title_fourth {
-    margin: 39px 0 14px 15px;
+  .navigation__column:first-child {
+    margin: 0 0 50px 0;
   }
-  
+
+  .navigation__column:last-child {
+    margin: 0;
+  }
+
+  .navigation__title_fourth {
+    margin: 2px 0 12px 16px;
+  }
+
   .signUp__text {
-    margin-bottom: 30px;
+    margin-bottom: 22px;
     width: 200px;
     text-align: center;
   }
 
   .signUp__button {
+    width: 50px;
     padding: 10px 50px 10px 50px;
     font-size: 12px;
     line-height: 11px;
-    margin-left: 18px;
+    margin: 0 0 107px 23px;
   }
 
   .navigation__networks {
-    margin-top: 117px;
     width: 160px;
-    margin-left: 12px;
+    margin-left: 19px;
   }
 
   .network__logo {
@@ -1115,12 +1156,13 @@ a.navigation__item:hover {
 
 @media screen and (max-width: 374px) {
   body {
-    max-width: 320px;
+    width: 100%;
     margin: 0 auto;
   }
 
   .header__container {
     padding-left: 15px;
+    background-size: cover;
     background-position-x: 24%;
   }
 

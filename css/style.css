@@ -1,7 +1,23 @@
 body {
   font-family: 'GothamPro', sans-serif;
+  margin: 0;
+  min-width: 320px;
+}
+
+.header {
   max-width: 1030px;
   margin: 0 auto;
+}
+
+main {
+  max-width: 1030px;
+  margin: 0 auto;
+}
+
+.gallery {
+  max-width: 1030px;
+  margin: 0 auto;
+  height: 255px;
 }
 
 .header__menu {
@@ -107,10 +123,12 @@ body {
 .container__title {
   font-size: 30px;
   font-weight: 700;
+  line-height: 29px;
+  letter-spacing: .04em;
   color: #fff;
   text-transform: uppercase;
   max-width: 195px;
-  margin-bottom: 5px;
+  margin: 12px 0;
 }
 
 .button {
@@ -130,7 +148,7 @@ body {
 }
 
 .products {
-  padding-bottom: 45px;
+  padding-bottom: 38px;
 }
 
 .title {
@@ -223,6 +241,7 @@ body {
 
 .history__video_background {
   position: absolute;
+  cursor: pointer;
 }
 
 .history__video_play {
@@ -248,18 +267,208 @@ body {
   color: #fff;
 }
 
+.stories {
+  height: 480px;
+}
+
+.stories__title {
+  text-align: center;
+  margin: 77px auto 41px auto;
+}
+
+.stories__items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.story {
+  width: 307px;
+}
+
+.story__image {
+  width: 100%;
+  height: 148px;
+}
+
+.story__title {
+  font-size: 18px;
+  text-transform: none;
+  margin: 25px 0 10px 0;
+  letter-spacing: .02em;
+}
+
+.story__text {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.story__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.story__button_text {
+  font-size: 12px;
+  color: #000;
+  font-weight: 800;
+}
+
+.story__button_WhiteArrow {
+  display: none;
+}
+
+.story__button_text:hover {
+  color: #aaa;
+}
+
+.story__date {
+  font-size: 12px;
+  opacity: .3;
+  font-weight: 700;
+  margin: 0;
+}
+
+.gallery__title {
+  margin: 0 0 12px 0;
+  text-align: end;
+  font-size: 18px;
+  line-height: 17px;
+  text-transform: uppercase;
+  opacity: .3;
+  letter-spacing: .04em;
+}
+
+.gallery__photos {
+  display: flex;
+  width: 100%;
+}
+
+.gallery__photo {
+  width: 147.14px;
+  height: 147.14px;
+}
+
+.gallery__photo_tablet {
+  display: none;
+}
+
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 56px 0 41px 0;
+}
+
+.footer__navigation {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 70px 53px 70px;
+}
+
+.navigation__column:first-child {
+  margin: 0 36px 0 85px;
+}
+
+.navigation__column:last-child {
+  margin: 0 81px 0 0;
+}
+
+.navigation__title {
+  font-size: 12px;
+  line-height: 11px;
+  margin-bottom: 11px;
+  font-weight: 700;
+}
+
+.navigation__items {
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation__item {
+  font-size: 12px;
+  line-height: 11px;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+.navigation__item:last-child {
+  margin-bottom: 0;
+}
+
+a.navigation__item:hover {
+  text-decoration: underline;
+}
+
+.signUp__text {
+  margin: 0 0 11px 0;
+}
+
+.signUp__button {
+  display: block;
+  width: 42px;
+  font-size: 10px;
+  line-height: 10px;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  border: 1px solid #fff;
+  padding: 8px 45px 8px 45px;
+  margin-bottom: 34px;
+}
+
+.signUp__button:hover {
+  text-decoration: underline;
+}
+
+.navigation__networks {
+  display: flex;
+  justify-content: space-between;
+  width: 134px;
+}
+
+.footer__rights {
+  text-align: center;
+  font-size: 12px;
+  line-height: 11px;
+}
+
 @media screen and (max-width: 1169px) {
   body {
+    margin: 0;
+  }
+
+  .header {
+    max-width: 930px;
+    margin: 0 auto;
+  }
+
+  main {
+    max-width: 930px;
+    margin: 0 auto;
+  }
+
+  .gallery {
     max-width: 930px;
     margin: 0 auto;
   }
 
   .header__menu {
-    height: 130px;
+    height: 122px;
+    margin-bottom: 8px;
+  }
+
+  .container__title {
+    margin: 6px 0;
   }
 
   .header__container {
     height: 253px;
+    padding-left: 54px;
+    background-position-x: 55%;
+    background-position-y: 35%;
   }
 
   .history__text_main {
@@ -267,12 +476,17 @@ body {
     font-weight: normal;
   }
 
-  .products__title {
-    padding: 50px 0 0 0;
+  .products {
+    padding-bottom: 70px;
   }
 
-  .products {
-    padding-bottom: 60px;
+  .products__title {
+    text-align: center;
+    padding: 43px 0 0 0;
+  }
+
+  .sneakers__image {
+    padding-bottom: 27px;
   }
 
   .history {
@@ -287,15 +501,66 @@ body {
   .history__text {
     width: 248px;
   }
+
+  .stories__title {
+    margin-top: 91px;
+  }
+
+  .story {
+    width: 277px;
+  }
+
+  .story__text {
+    font-size: 13px;
+  }
+
+  .story__button_text {
+    font-weight: 700;
+  }
+
+  .stories {
+    height: 491px;
+  }
+
+  .gallery__photo {
+    width: 132.86px;
+    height: 132.86px;
+  }
+
+  .footer {
+    padding: 70px 0 46px 0;
+  }
+
+  .footer__navigation {
+    margin: 0 47px 53px 47px;
+  }
+
+  .navigation__column:first-child {
+    margin: 0 31px 0 38px;
+  }
+
+  .navigation__column:last-child {
+    margin: 0 30px 0 0;
+  }
+
+  .navigation__title {
+    margin: 0 0 11px 0;
+  }
+
+  .signUp__text {
+    margin-bottom: 9px;
+  }
 }
 
 @media screen and (max-width: 1023px) {
-  body {
-    max-width: 1023px;
-    margin: 0 auto;
+  main {
+    max-width: 100%;
+    margin: 0 0 0 0;
   }
 
   .header__menu {
+    height: 115px;
+    margin: 0;
     justify-content: space-between;
   }
 
@@ -315,11 +580,11 @@ body {
   .menu__form {
     display: none;
   }
-	
+
   .menu__profile {
     display: none;
   }
-	
+
   .menu__USA {
     display: none;
   }
@@ -331,20 +596,47 @@ body {
 
   .header__container {
     background-size: 1528px 415px;
-    background-position-x: 20%;
+    background-position-x: 17%;
     height: 415px;
+    padding-left: 50px;
   }
 
   .container__title {
     font-size: 50px;
+    line-height: 48px;
+    letter-spacing: .03em;
+    margin: 40px -3px;
   }
 
   .container__button {
     font-size: 20px;
   }
 
+  .container__button_arrow {
+    width: 72px;
+    margin-left: 5px;
+  }
+
   .title {
     font-size: 30px;
+  }
+
+  .products {
+    padding-bottom: 0;
+    height: 417px;
+  }
+
+  .products__title {
+    padding: 38px 12px 0 0;
+    letter-spacing: .03em;
+  }
+
+  .sneakers_mobile {
+    margin-left: 7px;
+  }
+
+  .sneakers_tablet {
+    margin-left: -73px;
   }
 
   .sneakers_dekstop {
@@ -358,7 +650,12 @@ body {
   .sneakers__image {
     width: 230px;
     height: 233px;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
+    margin-left: 15px;
+  }
+
+  .sneakers__image_mobile {
+    padding-left: 13px;
   }
 
   .sneakers__name {
@@ -371,10 +668,11 @@ body {
     align-items: center;
     flex: 1;
   }
- 
+
   .sneakers__description_price {
     font-size: 25px;
     flex: 4;
+    margin: 9px 0;
   }
 
   .sneakers__description_colors {
@@ -393,7 +691,16 @@ body {
 
   .history {
     flex-direction: column;
-    height: 590px;
+    height: 786px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(2.5deg, #000 0%, #000 89.8%, #fff 90%, #fff 100%);
+    top: -10px;
+  }
+
+  .history__title {
+    padding: 138px 0 0 0;
+    letter-spacing: .02em;
   }
 
   .history__video {
@@ -408,7 +715,7 @@ body {
   .history__text_main {
     font-size: 20px;
     font-weight: normal;
-    padding-bottom: 30px;
+    padding-bottom: 18px;
   }
 
   .history__button {
@@ -420,20 +727,146 @@ body {
   }
 
   .history__video_main {
-    width: 681px;
-    height: 374px;
+    width: 696px;
+    height: 390px;
     padding: 0;
+  }
+
+  .stories {
+    background: linear-gradient(2.5deg, #fff 0%, #fff 9.9%, #000 10%, #000 100%);
+    color: #fff;
+    height: 939px;
+    margin-top: -10px;
+  }
+
+  .stories__items {
+    justify-content: space-around;
+  }
+
+  .stories__title {
+    margin-top: 0;
+  }
+
+  .story_desktop {
+    display: none;
+  }
+
+  .story {
+    width: 312px;
+  }
+
+  .story__image {
+    height: 166px;
+  }
+
+  .story__title {
+    font-size: 25px;
+    margin-top: 27px;
+  }
+
+  .story__text {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 30px;
+  }
+
+  .story__button_text {
+    color: #fff;
+    font-size: 20px;
+  }
+
+  .story__date {
+    font-size: 15px;
+    color: #d1d1d1;
+    opacity: 1;
+  }
+
+  .story__button_arrow {
+    display: none;
+  }
+
+  .story__button_WhiteArrow {
+    display: inline;
+  }
+
+  .gallery {
+    margin-top: -250px;
+    height: 505px;
+    max-width: 680px;
+  }
+
+  .gallery__title {
+    font-size: 30px;
+    line-height: 29px;
+    color: #fff;
+    opacity: 1;
+  }
+
+  .gallery__photos {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+    width: 680px;
+  }
+
+  .gallery__photo {
+    width: 170px;
+    height: 170px;
+  }
+
+  .gallery__photo_tablet {
+    display: inline;
+    width: 170px;
+    height: 170px;
+  }
+
+  .footer {
+    padding: 59px 0 23px 0;
+  }
+
+  .footer__navigation {
+    margin: 0 0 70 0;
+  }
+
+  .navigation__column:first-child {
+    margin: 0 0 0 18px;
+  }
+
+  .navigation__column:last-child {
+    margin: 0 9px 0 0;
+  }
+
+  .navigation__title {
+    margin: 0 0 7px 0;
+  }
+
+  .navigation__item {
+    margin-bottom: 7px;
+  }
+
+  .signUp__text {
+    width: 156px;
+    margin: 0 0 10px 0;
+  }
+
+  .signUp__button {
+    padding: 7px 50px 7px 50px;
+    margin-bottom: 28px;
+  }
+
+  .navigation__networks {
+    width: 117px;
   }
 }
 
 @media screen and (max-width: 767px) {
   body {
-    max-width: 375px;
-    margin: 0 auto;
+    width: 100%;
   }
 
   .header__container {
-    background-size: 706px 191px;
+    background-size: cover;
     height: 191px;
     padding-left: 50px;
   }
@@ -455,18 +888,29 @@ body {
 
   .container__title {
     font-size: 20px;
+    line-height: 19px;
+    letter-spacing: 0;
+    margin: 30px 0 15px 0;
   }
 
   .container__button {
     font-size: 12px;
   }
 
+  .container__button_arrow {
+    width: 45px;
+  }
+
   .title {
     font-size: 20px;
   }
 
+  .products {
+    height: 309px;
+  }
+
   .products__title {
-    padding: 15px 0 0 0;
+    padding: 17px 12px 0 0;
   }
 
   .sneakers_tablet {
@@ -478,6 +922,7 @@ body {
     height: 163px;
     align-self: center;
     padding-bottom: 0;
+    margin: -17px 10px 15px 0;
   }
 
   .sneakers__name {
@@ -490,6 +935,7 @@ body {
 
   .sneakers__description_price {
     font-size: 20px;
+    margin: 4px 0;
   }
 
   .sneakers {
@@ -506,13 +952,13 @@ body {
   }
 
   .history {
-    height: 380px;
+    height: 513px;
   }
-  
+
   .history__title {
-    width: 260px;
+    width: 253px;
     margin: 0;
-    padding: 0;
+    padding: 78px 0 7px 16px;
   }
 
   .history__text {
@@ -523,21 +969,203 @@ body {
     font-size: 14px;
   }
 
+  .history__video {
+    padding-left: 42px;
+  }
+
   .history__video_main {
     width: 285px;
     height: 160px;
+  }
+
+  .history__video_background {
+    width: 22px;
+    height: 22px;
+  }
+
+  .history__video_play {
+    width: 5px;
+    height: 5px;
+  }
+
+  .stories {
+    height: 862px;
+  }
+
+  .stories__title {
+    margin-bottom: 28px;
+  }
+
+  .story__tablet {
+    display: none;
+  }
+
+  .story {
+    width: 279px;
+  }
+
+  .story__image {
+    height: 148px;
+  }
+
+  .story__title {
+    font-size: 20px;
+    margin: 24px 0 5px 0;
+  }
+
+  .story__text {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 24px;
+  }
+
+  .story__button_text {
+    font-size: 12px;
+  }
+
+  .button_WhiteArrow {
+    height: 11px;
+    margin-left: 15px;
+  }
+
+  .gallery {
+    margin-top: -347px;
+    height: 539px;
+    max-width: 280px;
+  }
+
+  .gallery__title {
+    font-size: 25px;
+    line-height: 24px;
+    letter-spacing: .05em;
+    text-align: center;
+  }
+
+  .gallery__photos {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0;
+    margin: 0 auto;
+    width: 280px;
+    height: 280px;
+  }
+
+  .gallery__photo_mobile {
+    display: none;
+  }
+
+  .gallery__photo_tablet {
+    display: none;
+  }
+
+  .gallery__photo {
+    width: 140px;
+    height: 140px;
+  }
+
+  .gallery__photo_fifth {
+    order: 5;
+  }
+
+  .gallery__photo_third {
+    order: 6;
+  }
+
+  .footer {
+    padding: 40px 0 23px 0;
+  }
+
+  .footer__navigation {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 25px 0;
+  }
+
+  .navigation__title {
+    font-size: 15px;
+    line-height: 14px;
+    margin: 0 0 5px 0;
+  }
+
+  .navigation__item {
+    font-size: 15px;
+    line-height: 14px;
+    align-self: center;
+    margin-bottom: 10px;
+  }
+
+  .navigation__item_small {
+    margin-bottom: 8px;
+  }
+
+  .navigation__column {
+    margin-bottom: 41px;
+  }
+
+  .navigation__column_first {
+    order: 0;
+  }
+
+  .navigation__column_second {
+    order: 2;
+  }
+
+  .navigation__column_third {
+    order: 1;
+  }
+
+  .navigation__column_fourth {
+    order: 3;
+  }
+
+  .navigation__column:first-child {
+    margin: 0 0 50px 0;
+  }
+
+  .navigation__column:last-child {
+    margin: 0;
+  }
+
+  .navigation__title_fourth {
+    margin: 2px 0 12px 16px;
+  }
+
+  .signUp__text {
+    margin-bottom: 22px;
+    width: 200px;
+    text-align: center;
+  }
+
+  .signUp__button {
+    width: 50px;
+    padding: 10px 50px 10px 50px;
+    font-size: 12px;
+    line-height: 11px;
+    margin: 0 0 107px 23px;
+  }
+
+  .navigation__networks {
+    width: 160px;
+    margin-left: 19px;
+  }
+
+  .network__logo {
+    height: 22px;
   }
 }
 
 @media screen and (max-width: 374px) {
   body {
-    max-width: 320px;
+    width: 100%;
     margin: 0 auto;
   }
 
   .header__container {
     padding-left: 15px;
-    background-position-x: 30%;
+    background-size: cover;
+    background-position-x: 24%;
   }
 
   .header__logo_mobile {
@@ -547,9 +1175,34 @@ body {
   .menu__burger {
     margin-right: 20px;
   }
-  
+
+  .container__title {
+    letter-spacing: .03em;
+    margin: 30px 0 14px 7px;
+  }
+
+  .products {
+    height: 306px;
+  }
+
+  .sneakers__image {
+    width: 166px;
+    height: 163px;
+    align-self: center;
+    padding-bottom: 0;
+  }
+
   .history__video {
     padding: 0;
   }
+
+  .history__title {
+    padding: 80px 0 7px 16px;
+  }
+
+  .stories {
+    height: 866px;
+  }
+
 }
 
